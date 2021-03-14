@@ -17,8 +17,9 @@ class TestCreateUser(unittest.TestCase):
         # self.driver = webdriver.Remote(
         #     # command_executor='http://192.168.0.14:4444/wd/hub',
         #     # desired_capabilities=DesiredCapabilities.FIREFOX)
-        self.driver = webdriver.Firefox(executable_path=r"C:\Program Files (x86)\geckodriver.exe")
-        
+        # self.driver = webdriver.Firefox(executable_path=r"C:\Program Files (x86)\geckodriver.exe")
+        self.driver = webdriver.Chrome(executable_path=r'D:\Selenium-GRID\chromedriver.exe')
+
     def test_userCreate(self):
         """ Testing Creation of user"""
         driver = self.driver
